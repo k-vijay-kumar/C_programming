@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main()
+{
+	//Considering 64 bit(8 byte) system
+
+	printf("Size of double data type is %ld bytes\n", sizeof(double));
+}
