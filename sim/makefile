@@ -1,7 +1,7 @@
 #target: dependencies
 #	action
 
-all: preprocess compile assemble link execute	
+all: preprocess compile assemble link execute mem_map
 
 preprocess:	
 	gcc -E `find ../src/ -name $(file_name).c` -o $(file_name).i
@@ -17,6 +17,9 @@ link:
 
 execute:
 	./output.exe
+
+mem_map:
+	size output.exe
 
 clean: 
 	rm *.i *.asm *.obj *.exe

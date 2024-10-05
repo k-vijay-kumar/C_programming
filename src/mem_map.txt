@@ -1,0 +1,8 @@
+mem map from high address to low address
+
+cmd line arg - cargv, carg
+stack - growing downward - local var
+heap - growing upward - dynamic mem allocated
+uninitialised data - initialised to 0 - bss(block started by symbol)
+initialised data - data segment
+text - code segment
