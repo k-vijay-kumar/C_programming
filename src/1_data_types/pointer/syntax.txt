@@ -1,0 +1,13 @@
+pointer declaration syntax-	
+d_type* ptr_name;
+
+pointer definition syntax-	
+ptr_name = &var_of_d_type;
+
+dereferencing pointer- 	
+*ptr_name
+
+
+Note::
+ptr_name has the address of var_of_d_type
+*ptr_name has the value stored in var_of_d_type

@@ -1,4 +1,5 @@
-mem map from high address to low address
+mem map from high address to low address 
+mem map explains the position in memory where different parts of our code stays
 
 cmd line arg - cargv, carg
 stack - growing downward - local var

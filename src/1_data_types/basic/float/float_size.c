@@ -6,3 +6,6 @@ int main()
 
 	printf("Size of float data type is %ld bytes\n", sizeof(float));
 }
+
+//Output
+//Size of float data type is 4 bytes
