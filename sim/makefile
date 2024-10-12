@@ -1,25 +1,25 @@
 #target: dependencies
 #	action
 
-all: preprocess compile assemble link execute mem_map
+all: preprocess compile assemble link execute mem_map 
 
 preprocess:	
-	gcc -E `find ../src/ -name $(file_name).c` -o $(file_name).i
+	gcc -E `find ../src/ -name $(filename).c` -o output/$(filename).i 
 
 compile:
-	gcc -S `find ../src/ -name $(file_name).c` -o $(file_name).asm
+	gcc -S `find ../src/ -name $(filename).c` -o output/$(filename).asm 
 
 assemble:
-	gcc -c `find ../src/ -name $(file_name).c` -o $(file_name).obj
+	gcc -c `find ../src/ -name $(filename).c` -o output/$(filename).obj 
 
 link:
-	gcc *.obj -o output.exe
+	gcc output/*.obj -o output/output.exe 
 
 execute:
-	./output.exe
+	./output/output.exe | tee -a $(filename).log
 
 mem_map:
-	size output.exe
+	size output/output.exe | tee -a $(filename).log
 
 clean: 
-	rm *.i *.asm *.obj *.exe
+	rm output/*.i output/*.asm output/*.obj output/*.exe *.log
