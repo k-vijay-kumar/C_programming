@@ -1,0 +1,22 @@
+Wild Pointer:
+A pointer that is not initialized till its first use in the program.
+Any uninitialized pointer is known as a wild pointer in C because it points to some arbitrary memory location.
+and can cause a program to crash or behave unexpectedly.
+
+///////////////////////////
+Null Pointer:
+A pointer that does not point to any memory location and hence does not hold the address of any variables.
+A null pointer is allocated to zero or NUL
+
+//////////////////////////
+Dangling Pointer:
+The pointers that point to some freed/deleted location from the program's memory
+Dangling Pointer occurs when a pointer pointing to a variable goes out of scope or when an object/variables memory gets deallocated
+
+/////////////////////////
+Void Pointer:
+The void pointers refer to the pointers that have no data type associated with them. 
+As the name suggests, the void pointer indicates that the pointer is basically empty
+So, it is capable of holding address of variable of any data type in the program
+
+////////////////////////
