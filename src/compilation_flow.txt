@@ -1,0 +1,46 @@
+Source file -
+initially a c prog file will be saved as test.c
+
+Preprocessing -
+This file before compilation, when compiled will add the preprocessing data's in the source file.
+After the addition, it will create a intermediate/extended source code. (test.i)
+In this intermediate source code, all the #include header files will be substituted with its functions and 
+the #define variable values will be substituted insted of the variable
+
+Compilation -
+Then compilation takes place, where it checks for syntax errors.
+If no error present, then assembly level code will be generated.(test.asm)
+
+Assembler -
+Then assembler converts asm file to object file. (test.obj)
+
+Linker -
+Linker links all the object files with system libraries then links all object files together. Now executable file is generated.(test.exe)
+
+loader -
+Loader will load the exe file to the main memory(RAM)
+Runtime error will be shown here.
+
+Commands used for tese process:
+Preprocessing:
+	gcc -E test.c -o test.i
+
+Compilation:
+	gcc -s test.c -o test.asm
+
+Assembling:
+	gcc -c test.c -o test.obj
+
+Linking:
+	gcc *.obj -o test.exe
+
+Run:
+	./test.exe
+
+To get mem map information:
+	size test.exe
+
+
+NOTE:
+	test is a optional name used here. You can use your filename
+
