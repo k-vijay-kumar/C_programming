@@ -1,0 +1,70 @@
+A Vaiable's
+1. Default value  	- Initial value of a variable
+2. Memory location  	- Where the variable is stored
+3. Scope  		- scope of a variable is the region of code where it can be accessed
+4. lifetime		- lifetime is the time it exists and holds its value
+
+All these are mentioned by the storage classes
+They are
+1.Auto		- default
+2.Register
+3.Extern
+4.Static
+
+These are used before the datatypes.
+Syntax:
+	storage_cls data_type var_name;
+
+Types of Scope - 
+Block
+Function/Method
+program
+
+
+///////////////////////////
+Auto:
+Default Value 	- garbage
+Scope 		- function/Block scope is allowed
+Location 	- stack(RAM)
+Lifetime 	- within the block
+
+For auto storage class, the instructions are stored in stack, from there moved to RAM, there to CPU registers.
+Switching of instruction from RAM to CPU reg takes time.
+
+//////////////////////
+Register:
+Default Value 	- garbage
+Scope 		- function/Block scope is allowed
+Location 	- CPU Register
+Lifetime 	- within the block
+
+For register, by storing variables in RAM, time is efficient. But all variables cant be stored in cpu reg as its memory is less. 
+Only store frequently used variables in register.
+If compiler cant store a variable in CPU reg, then it will be stored in stack(auto).
+we cant use pointer to store address of a register variable, as CPU reg doesnt have an address.
+
+///////////////////////////
+Static:
+Default Value 	- zero
+Scope 		- function/Block/Program scope is allowed
+Location 	- RAM
+Lifetime 	- till the end of the program
+
+Once a variable is initialised as static, if once again it is initialised it wont be 0, the variable would have the older value.
+Repetitive initializations of the same variable as static will not be executed.
+
+///////////////////////////
+Extern:         
+	- all global variables are Extern
+
+Default Value 	- zero
+Scope 		- Global scope 
+Location 	- RAM
+Lifetime 	- till the end of the program
+
+Extern is used if a variable is defined in another file, and we want to use that variable in the current file in the same project.
+No memory will be allocated in the file where extern is used.
+
+Extern is also used in the same file, if variable is declared at the end of the program and we want to use at the beginning of the program.
+
+///////////////////////////////
