@@ -1,0 +1,22 @@
+Different ways of structure syntax:
+
+////////////////////////////////////////////
+Declaration and definition:
+struct struct_name
+{
+	//members declaration same as variable declaration
+}var_name = {values_of_members_seperated_by_comma_in_the_same_order_as_declaration};
+
+Accessing:
+var_name.member_name
+
+////////////////////////////////////////////
+struct struct_name
+{
+	//members declaration same as variable declaration
+};
+
+struct struct_name var_name;
+
+/////////////////////////////////////////////
+
