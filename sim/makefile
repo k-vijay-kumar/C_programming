@@ -4,16 +4,16 @@
 all: preprocess compile assemble link execute mem_map 
 
 preprocess:	
-	gcc -E `find ../src/ -name $(filename).c` -o output/$(filename).i 
+	gcc -E -Wall `find ../src/ -name $(filename).c` -o output/$(filename).i 
 
 compile:
-	gcc -S `find ../src/ -name $(filename).c` -o output/$(filename).asm 
+	gcc -S -Wall `find ../src/ -name $(filename).c` -o output/$(filename).asm 
 
 assemble:
-	gcc -c `find ../src/ -name $(filename).c` -o output/$(filename).obj 
+	gcc -c -Wall `find ../src/ -name $(filename).c` -o output/$(filename).obj 
 
 link:
-	gcc output/*.obj -o output/output.exe 
+	gcc -Wall output/*.obj -o output/output.exe 
 
 execute:
 	./output/output.exe | tee -a $(filename).log
