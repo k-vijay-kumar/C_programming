@@ -1,0 +1,19 @@
+Declaration:
+return_type f_name(d_type of arguments with comma in between);
+
+Definition:
+return_type f_name(d_type and var_name of arguments with comma in between each var)
+{
+	//code of function
+	return return value/var;
+}
+
+F_pointer:
+Declaration:
+return_type (*fptr_name)(d_type of arguments with comma in between);
+
+Definition:
+fptr_name = &func_name;
+
+Dereferencing:
+(*f_ptr_name)(arguments_to_be_passed)
