@@ -13,11 +13,12 @@ int main()
 	printf("Size of char pointer data type is %ld bytes\n", sizeof(char*));
 }
 
-//Output
-//Size of void pointer data type is 8 bytes
-//Size of int pointer data type is 8 bytes
-//Size of float pointer data type is 8 bytes
-//Size of double pointer data type is 8 bytes
-//Size of char pointer data type is 8 bytes
-
+/*
+Output
+Size of void pointer data type is 8 bytes
+Size of int pointer data type is 8 bytes
+Size of float pointer data type is 8 bytes
+Size of double pointer data type is 8 bytes
+Size of char pointer data type is 8 bytes
+*/
 

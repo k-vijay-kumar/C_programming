@@ -27,8 +27,9 @@ int main()
 	printf("yob: %d\n", ptr->yob);
 }
 
-//Output
-//Initial: V
-//dob: 7
-//yob: 23
-
+/*
+Output
+Initial: V
+dob: 7
+yob: 23
+*/

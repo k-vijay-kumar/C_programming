@@ -1,0 +1,8 @@
+enum enum_name
+{
+	//member1 = value,   //value if needed or else by default value starts from 0
+	//member2,
+	.
+	.
+	//membern
+};

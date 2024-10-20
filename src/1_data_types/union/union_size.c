@@ -17,10 +17,11 @@ int main()
 	printf("Size of struct my_d_type data type is %ld bytes\n", sizeof(var));
 }
 
-//Output
-//Size of struct my_d_type data type is 4 bytes
+/*
+Output
+Size of struct my_d_type data type is 4 bytes
 
-
-//size = max(1, 4, 4)
-//1 is 1 byte mem for char
-//4 is 4 byte memory for int
+size = max(1, 4, 4)
+1 is 1 byte mem for char
+4 is 4 byte memory for int
+*/

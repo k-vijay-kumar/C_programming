@@ -1,0 +1,1 @@
+const d_type var_name = value;

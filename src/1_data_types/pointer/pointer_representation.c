@@ -15,8 +15,10 @@ int main()
 	printf("Dereferencing pointer: %d\n", *ptr_int);
 }
 
-//Output
-//Int value: 23
-//Pointer value(address) of int: 0x7ffd0b89efac
-//Dereferencing pointer: 23
+/*
+Output:
+Int value: 23
+Pointer value(address) of int: 0x7ffd0b89efac
+Dereferencing pointer: 23
+*/
 

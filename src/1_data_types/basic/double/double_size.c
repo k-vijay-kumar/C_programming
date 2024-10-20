@@ -7,5 +7,7 @@ int main()
 	printf("Size of double data type is %ld bytes\n", sizeof(double));
 }
 
-//Output
-//Size of double data type is 8 bytes
+/*
+Output
+Size of double data type is 8 bytes
+*/

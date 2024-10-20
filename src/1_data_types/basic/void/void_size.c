@@ -5,6 +5,7 @@ int main()
 	printf("The size of void data_type is %ld bytes\n", sizeof(void));
 }
 
-//Output
-//The size of void data_type is 1 bytes
-
+/*
+Output
+The size of void data_type is 1 bytes
+*/

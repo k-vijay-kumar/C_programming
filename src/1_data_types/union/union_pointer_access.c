@@ -1,5 +1,8 @@
-//Union members can be accessed using a pointer to union using -> operator
-//Only last modified member can be accessed. (At a time, only 1 member can be accessed)
+/*
+ * Union members can be accessed using a pointer to union using -> operator
+ * Only last modified member can be accessed. (At a time, only 1 member can be accessed)
+ *
+ */
 
 #include <stdio.h>
 
@@ -28,10 +31,12 @@ int main()
 	printf("yob: %d\n", ptr->yob);
 }
 
-//Output
-//Initial: 
-//dob: 23
-//yob: 23
+/*
+Output
+Initial: 
+dob: 23
+yob: 23
 
-//Last modified value is 23. So it is displayed.
-//Since %c cannot display integer value, it is not displayed
+Last modified value is 23. So it is displayed.
+Since %c cannot display integer value, it is not displayed
+*/

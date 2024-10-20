@@ -22,8 +22,9 @@ int main()
 	printf("yob: %d\n", var.yob);
 }
 
-//Output
-//Initial: V
-//dob: 7
-//yob: 23
-
+/*
+Output
+Initial: V
+dob: 7
+yob: 23
+*/
