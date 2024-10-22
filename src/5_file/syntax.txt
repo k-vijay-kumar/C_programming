@@ -1,0 +1,18 @@
+//To open a file
+file_handler = fopen("file_name.txt", "mode");
+
+where, 
+mode can be -> r, w, a, r+, w+, a+
+
+////////////////////////////////////////////////////
+
+//To place cursor at a point
+fseek(file_handler, distance, initial_pos);
+
+where,
+initial_pos can be -> SEEK_SET, SEEK_CUR, SEEK_END
+
+///////////////////////////////////////////////////
+
+//To get current pos
+ftell(file_handler);
