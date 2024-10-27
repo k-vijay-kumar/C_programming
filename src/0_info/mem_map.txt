@@ -7,3 +7,13 @@ heap - growing upward - dynamic mem allocated
 uninitialised data - initialised to 0 - bss(block started by symbol)
 initialised data - data segment
 text - code segment
+
+/////////////////////////////////////////
+
+mem allocation:
+
+static memory allocation	- allocation of memory at compile time 
+dynamic memory allocation	- allocation of memory at run time
+
+dma is alloacated in heap 
+all dma allocated must be freed
