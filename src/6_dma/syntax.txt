@@ -1,0 +1,11 @@
+//malloc - memory allocation
+malloc(n * sizeof(datatype));  
+
+//calloc - contiguous allocation
+calloc(no of blocks, size of each block)
+
+//realloc  - it reallocates the size without losing prev info
+realloc(ptr,newsize); 
+
+//free the pointer
+free(ptr)
