@@ -26,26 +26,25 @@ int main()
 		exit(0);
 	}
 	
-	char c;
-	char str[5];
+	int c;                         //fgetc returns int
+	char str[3];
 	
 	//To read 2 characters from the file
 	int i = 1;
-	while(i<3)
+	while(i==1)
 	{
-		c = fgetc(fptr);
-		printf("%c", c);
+		fgets(str, 2, fptr);
+		printf("%s", str);
 		i++;
 	}
 
 	//To read from 3 character to the end of file as a string of 2 char each
-	while(!feof(fptr))
+	while( (c = fgetc(fptr)) != EOF)
 	{
-		fgets(str, 2, fptr);
-		printf("%s", str);
+		printf("%c", c);
 	}
 
-	char str1[3] = "Hi ";
+	char str1[4] = "Hi ";
 	char ch = 'V';
 
 	//writing string "Hi" to file
@@ -54,7 +53,7 @@ int main()
 	//writing char 'V' to file
 	fputc(ch, fptr);
 
-	char str2[5] = ". Its";
+	char str2[6] = ". Its";
 	int num = 2023;
 
 	//writing int to a file
@@ -66,11 +65,10 @@ int main()
 
 /*
 Output:
-Reads:
+Reads after executing write.c and append.c:
 Hi V. Its 2023
 
-Writes to file:
+Content in file after appending:
 Hi V. Its 2023
-Hi 
-V. Its 2023
+Hi V. Its 2023
 */

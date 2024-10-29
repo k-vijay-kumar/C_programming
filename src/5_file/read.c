@@ -26,23 +26,22 @@ int main()
 		exit(0);
 	}
 	
-	char c;
-	char str[5];
+	int c;         //fgetc returns int
+	char str[3];
 	
 	//To read 2 characters from the file
 	int i = 1;
-	while(i<3)
-	{
-		c = fgetc(fptr);
-		printf("%c", c);
-		i++;
-	}
-
-	//To read from 3 character to the end of file as a string of 2 char each
-	while(!feof(fptr))
+	while(i==1)
 	{
 		fgets(str, 2, fptr);
 		printf("%s", str);
+		i++;
+	}
+
+	//To read from 3 character to the end of file char by char
+	while( (c = fgetc(fptr)) != EOF)
+	{
+		printf("%c", c);
 	}
 
 	fclose(fptr);
@@ -52,5 +51,4 @@ int main()
 /*
 Output:
 Hi V. Its 2023
-
 */

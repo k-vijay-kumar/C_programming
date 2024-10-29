@@ -30,7 +30,7 @@ int main()
 		exit(0);
 	}
 
-	char str1[3] = "Hi ";
+	char str1[4] = "Hi ";
 	char ch = 'V';
 
 	//writing string "Hi" to file
@@ -49,10 +49,9 @@ int main()
 	rewind(fptr);
 
 	//Reading from te file
-	char c;
-	while(!feof(fptr))
+	int c;                //fgetc returns int
+	while( (c = fgetc(fptr)) != EOF)
 	{
-		c = fgetc(fptr);
 		printf("%c", c);
 	}
 

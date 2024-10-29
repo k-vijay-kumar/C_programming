@@ -28,7 +28,7 @@ int main()
 		exit(0);
 	}
 
-	char str1[3] = "Hi ";
+	char str1[4] = "Hi ";
 	char ch = 'V';
 
 	//writing string "Hi" to file
@@ -46,23 +46,22 @@ int main()
 	//to move cursor to beginning of the file
 	rewind(fptr);
 
-	char c;
-	char str[5];
+	int c;                     //fgetc returns int
+	char str[3];
 	
 	//To read 2 characters from the file
 	int i = 1;
-	while(i>2)
+	while(i==1)
 	{
-		c = fgetc(fptr);
-		printf("%c", c);
+		fgets(str, 2, fptr);
+		printf("%s", str);
 		i++;
 	}
 
 	//To read from 3 character to the end of file as a string of 2 char each
-	while(!feof(fptr))
+	while( (c = fgetc(fptr)) != EOF)
 	{
-		fgets(str, 2, fptr);
-		printf("%s", str);
+		printf("%c", c);
 	}
 
 
@@ -72,11 +71,11 @@ int main()
 
 
 /*
-Output in the file after 2 execution:
-Hi V. Its 2023
-Hi V. Its 2023
-Output in console (read value):
+Output in the file after executing the above program 2 times:
 Hi V. Its 2023
 Hi V. Its 2023
 
+Output in console:
+Hi V. Its 2023
+Hi V. Its 2023
 */

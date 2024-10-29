@@ -29,7 +29,7 @@ int main()
 		exit(0);
 	}
 
-	char str1[3] = "Hi ";
+	char str1[4] = "Hi ";
 	char ch = 'V';
 
 	//writing string "Hi" to file
@@ -42,7 +42,7 @@ int main()
 	int num = 2023;
 
 	//writing int to a file
-	fprintf(fptr, "%s %d\n", str2, num);
+	fprintf(fptr, "%s %d", str2, num);
 
 	//closing the file
 	fclose(fptr);
@@ -50,7 +50,7 @@ int main()
 
 
 /*
-Output in the file after 2 execution:
+Output in the file after executing the above program for 2 times:
 Hi V. Its 2023
 Hi V. Its 2023
 */
