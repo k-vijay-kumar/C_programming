@@ -141,7 +141,7 @@ C_programming/						<br/>
 		Hostname github.com
 		AddKeysToAgent yes				
 		PreferredAuthentications publickey		
-	I	dentityFile ~/.ssh/<filename>
+		IdentityFile ~/.ssh/<filename>
  	```		
 		
 - cloning the repo:
@@ -154,7 +154,7 @@ C_programming/						<br/>
 	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
 
 - In order to perform a seperate process:
-	- `make <process_name> filoename=<filename_without_.c>`		<br/>
+	- `make <process_name> filename=<filename_without_.c>`		<br/>
 	All the output files generated will be in the folder C_programming/sim/output/		<br/>
 	The log of the process performed will be in the folder C_programming/sim/
 
