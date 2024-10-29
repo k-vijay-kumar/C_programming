@@ -1,115 +1,115 @@
 # C_programming
-Basics of C Programming Language
+Basics of C Programming Language		<br/>
 
 ---
 ## Directory Structure:
-This navigates users to find out the directory locations...
+This navigates users to find out the directory locations...		<br/>
 
-C_programming/
-├── README.md
-├── sim
-│   ├── makefile
-│   ├── output
-│   └── run.sh
-└── src
-    ├── 00_hello_world.c
-    ├── 0_info
-    ├── 1_data_types
-    ├── 2_constants
-    ├── 3_alias
-    ├── 4_function
-    ├── 5_file
-    └── 6_dma
+C_programming/			<br/>
+├── README.md   		<br/>
+├── sim				<br/>
+│   ├── makefile		<br/>
+│   ├── output			<br/>
+│   └── run.sh			<br/>
+└── src				<br/>
+    ├── 00_hello_world.c	<br/>
+    ├── 0_info			<br/>
+    ├── 1_data_types		<br/>
+    ├── 2_constants		<br/>
+    ├── 3_alias			<br/>
+    ├── 4_function		<br/>
+    ├── 5_file			<br/>
+    └── 6_dma			<br/>
 
-10 directories, 4 files
+10 directories, 4 files		<br/>
 
 ---
 
 ## File Structure:
-This navigates users to find out the directory and file locations...
+This navigates users to find out the directory and file locations...		<br/>
 
-C_programming/
-├── README.md
-├── sim
-│   ├── makefile
-│   ├── output
-│   └── run.sh
-└── src
-    ├── 00_hello_world.c
-    ├── 0_info
-    │   ├── compilation_flow.txt
-    │   ├── mem_map.txt
-    │   └── storage_cls.txt
-    ├── 1_data_types
-    │   ├── basic
-    │   │   ├── char
-    │   │   │   ├── char_representation.c
-    │   │   │   └── char_size.c
-    │   │   ├── double
-    │   │   │   ├── double_need.c
-    │   │   │   ├── double_representation1.c
-    │   │   │   └── double_size.c
-    │   │   ├── float
-    │   │   │   ├── float_representation.c
-    │   │   │   └── float_size.c
-    │   │   ├── int
-    │   │   │   ├── int_representation.c
-    │   │   │   └── int_size.c
-    │   │   ├── syntax.txt
-    │   │   └── void
-    │   │       └── void_size.c
-    │   ├── pointer
-    │   │   ├── pointer_arithmetic.c
-    │   │   ├── pointer_representation.c
-    │   │   ├── pointer_size.c
-    │   │   ├── syntax.txt
-    │   │   └── types_of_ptr.txt
-    │   ├── structure
-    │   │   ├── struct_access.c
-    │   │   ├── struct_pointer_access.c
-    │   │   ├── struct_size.c
-    │   │   ├── struct_size_packed.c
-    │   │   └── syntax.txt
-    │   └── union
-    │       ├── syntax.txt
-    │       ├── union_access.c
-    │       ├── union_pointer_access.c
-    │       └── union_size.c
-    ├── 2_constants
-    │   ├── const
-    │   │   ├── const.c
-    │   │   └── syntax.txt
-    │   ├── enum
-    │   │   ├── enum.c
-    │   │   └── syntax.txt
-    │   └── macros
-    │       ├── macros.c
-    │       └── syntax.txt
-    ├── 3_alias
-    │   ├── syntax.txt
-    │   └── typedef.c
-    ├── 4_function
-    │   ├── function.c
-    │   ├── function_callback.c
-    │   ├── function_ptr.c
-    │   └── syntax.txt
-    ├── 5_file
-    │   ├── append.c
-    │   ├── append_plus.c
-    │   ├── fseek.c
-    │   ├── ftell.c
-    │   ├── read.c
-    │   ├── read_plus.c
-    │   ├── syntax.txt
-    │   ├── write.c
-    │   └── write_plus.c
-    └── 6_dma
-        ├── calloc.c
-        ├── malloc.c
-        ├── realloc.c
-        └── syntax.txt
+C_programming/						<br/>
+├── README.md						<br/>
+├── sim							<br/>
+│   ├── makefile					<br/>
+│   ├── output						<br/>
+│   └── run.sh						<br/>
+└── src							<br/>
+    ├── 00_hello_world.c				<br/>
+    ├── 0_info						<br/>
+    │   ├── compilation_flow.txt			<br/>
+    │   ├── mem_map.txt					<br/>
+    │   └── storage_cls.txt				<br/>
+    ├── 1_data_types					<br/>
+    │   ├── basic					<br/>
+    │   │   ├── char					<br/>
+    │   │   │   ├── char_representation.c		<br/>
+    │   │   │   └── char_size.c				<br/>
+    │   │   ├── double					<br/>
+    │   │   │   ├── double_need.c			<br/>
+    │   │   │   ├── double_representation1.c		<br/>
+    │   │   │   └── double_size.c			<br/>
+    │   │   ├── float					<br/>
+    │   │   │   ├── float_representation.c		<br/>
+    │   │   │   └── float_size.c			<br/>
+    │   │   ├── int					<br/>
+    │   │   │   ├── int_representation.c		<br/>
+    │   │   │   └── int_size.c				<br/>
+    │   │   ├── syntax.txt				<br/>
+    │   │   └── void					<br/>
+    │   │       └── void_size.c				<br/>
+    │   ├── pointer					<br/>
+    │   │   ├── pointer_arithmetic.c			<br/>
+    │   │   ├── pointer_representation.c		<br/>
+    │   │   ├── pointer_size.c				<br/>
+    │   │   ├── syntax.txt				<br/>
+    │   │   └── types_of_ptr.txt			<br/>
+    │   ├── structure					<br/>
+    │   │   ├── struct_access.c				<br/>
+    │   │   ├── struct_pointer_access.c			<br/>
+    │   │   ├── struct_size.c				<br/>
+    │   │   ├── struct_size_packed.c			<br/>
+    │   │   └── syntax.txt				<br/>
+    │   └── union					<br/>
+    │       ├── syntax.txt				<br/>
+    │       ├── union_access.c				<br/>
+    │       ├── union_pointer_access.c			<br/>
+    │       └── union_size.c				<br/>
+    ├── 2_constants					<br/>
+    │   ├── const					<br/>
+    │   │   ├── const.c					<br/>
+    │   │   └── syntax.txt				<br/>
+    │   ├── enum					<br/>
+    │   │   ├── enum.c					<br/>
+    │   │   └── syntax.txt				<br/>
+    │   └── macros					<br/>
+    │       ├── macros.c				<br/>
+    │       └── syntax.txt				<br/>
+    ├── 3_alias						<br/>
+    │   ├── syntax.txt					<br/>
+    │   └── typedef.c					<br/>
+    ├── 4_function					<br/>
+    │   ├── function.c					<br/>
+    │   ├── function_callback.c				<br/>
+    │   ├── function_ptr.c				<br/>
+    │   └── syntax.txt					<br/>
+    ├── 5_file						<br/>
+    │   ├── append.c					<br/>
+    │   ├── append_plus.c				<br/>
+    │   ├── fseek.c					<br/>
+    │   ├── ftell.c					<br/>
+    │   ├── read.c					<br/>
+    │   ├── read_plus.c					<br/>
+    │   ├── syntax.txt					<br/>
+    │   ├── write.c					<br/>
+    │   └── write_plus.c				<br/>
+    └── 6_dma						<br/>
+        ├── calloc.c					<br/>
+        ├── malloc.c					<br/>
+        ├── realloc.c					<br/>
+        └── syntax.txt					<br/>
 
-22 directories, 57 files
+22 directories, 57 files				<br/>
 
 ---
 
@@ -117,45 +117,45 @@ C_programming/
 
 ### Checkout:
 
-	**Creating key-pair:**
-		`ssh-keygen -t ed25519 -C "your_email@example.com"`
-			Use the noreply email of your github account for efficiency
-
-		When asked for the filename to save the key, enter `~/.ssh/<filename>`
+- Creating key-pair:
+	- `ssh-keygen -t ed25519 -C "your_email@example.com"`  				<br/>
 	
-		Dont use any passphrase. Just press enter. Keys will be generated.
+ 	Use the noreply email of your github account for efficiency  			<br/>
+	When asked for the filename to save the key, enter `~/.ssh/<filename>`		<br/>
+	Dont use any passphrase. Just press enter. Keys will be generated.		<br/>
 
-	**Adding config file for efficient use of multiple github accounts:**
- ```
-		cd ~/.ssh/
-		mkdir config
-		cd config
-		gvim config
-```
+- Adding config file for efficient use of multiple github accounts:			<br/>
+	- Creating config file
+   
+	```
+ 	cd ~/.ssh/				
+	mkdir config				
+	cd config					
+	gvim config
+ 	```									
+ 
+ 	- Enter the below text in config file:			
 
-		Enter the below text in config file:
-
-```
-		Host <your_hostname> github.com
-			Hostname github.com
-			AddKeysToAgent yes
-			PreferredAuthentications publickey
-			IdentityFile ~/.ssh/<filename>
-```
+	```
+ 	Host <your_hostname> github.com			
+		Hostname github.com
+		AddKeysToAgent yes				
+		PreferredAuthentications publickey		
+	I	dentityFile ~/.ssh/<filename>
+ 	```		
 		
-	**cloning the repo:**
-		cd to the directory where you want to clone the repo
-		`git@<your_hostname>:k-vijay-kumar/C_programming.git`		
+- cloning the repo:
+	cd to the directory where you want to clone the repo
+	- `git@<your_hostname>:k-vijay-kumar/C_programming.git`		
 		
 ### Running a program:
-	`cd C_programming/sim/`
-	`make all filename=<filename_without_.c>`
-		The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
+- `cd C_programming/sim/`
+- `make all filename=<filename_without_.c>`     	<br/>
+	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
 
-	In order to perform a seperate process:
-		`make <process_name> filoename=<filename_without_.c>`
-	
-	All the output files generated will be in the folder C_programming/sim/output/
+- In order to perform a seperate process:
+	- `make <process_name> filoename=<filename_without_.c>`		<br/>
+	All the output files generated will be in the folder C_programming/sim/output/		<br/>
 	The log of the process performed will be in the folder C_programming/sim/
 
 ---
