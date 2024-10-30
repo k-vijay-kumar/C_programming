@@ -143,7 +143,13 @@ C_programming/						<br/>
 		PreferredAuthentications publickey		
 		IdentityFile ~/.ssh/<filename>
  	```		
-		
+- Adding the ssh public key in Github
+```
+	Open your gitub account			
+ 	Settings -> SSH and GPG Keys -> New SSH Key		
+  	Add the key				
+   	Click on Add SSH Key
+  ```
 - cloning the repo:
 	cd to the directory where you want to clone the repo
 	- `git@<your_hostname>:k-vijay-kumar/C_programming.git`		
