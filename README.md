@@ -152,7 +152,7 @@ C_programming/						<br/>
   ```
 - cloning the repo:
 	cd to the directory where you want to clone the repo
-	- `git@<your_hostname>:k-vijay-kumar/C_programming.git`		
+	- `git clone git@<your_hostname>:k-vijay-kumar/C_programming.git`		
 		
 ### Running a program:
 - `cd C_programming/sim/`
