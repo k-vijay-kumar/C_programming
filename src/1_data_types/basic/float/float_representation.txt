@@ -1,0 +1,22 @@
+The floating point values are stored in memory using Implicit Representation method
+
+The float uses 32 bit Single precision representation
+
+Any floating point number need to represented as 
+(-1)^Sign x 1.Mantessa x 2^Exponent
+
+This value will be stored in the 32 bit as,
+{Sign, Exponent, Mantessa},
+
+Where, Sign (1bit)
+       Exponent (8 bits) - Tis will be stored in the biased format
+       Mantessa (23bits)
+
+Biased Format of Exponent,
+Bias = 2^n - 1, n=no. of bits for Exponent
+     = 127
+
+The Exponent Range is 0 to 256
+Subtracting the bias, we get -127 to 128
+
+So, The exponent value of -127 to 128 can be stored as 0 to 256
