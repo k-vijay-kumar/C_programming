@@ -1,0 +1,5 @@
+Initial: 
+dob: 23
+yob: 23
+   text	   data	    bss	    dec	    hex	filename
+  14472	   1552	    112	  16136	   3f08	output/output.exe

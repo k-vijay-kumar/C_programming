@@ -1,0 +1,5 @@
+Int value: 23
+Pointer value(address) of int: 0061FF18 
+Dereferencing pointer: 23
+   text	   data	    bss	    dec	    hex	filename
+  14504	   1552	    112	  16168	   3f28	output/output.exe

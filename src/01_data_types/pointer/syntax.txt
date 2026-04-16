@@ -1,0 +1,12 @@
+pointer declaration syntax -
+data_type* ptr_name;
+
+pointer definition syntax -
+ptr_name = &var_of_data_type;
+
+dereferencing pointer to get the value at the address pointed by it - 	
+*ptr_name
+
+Note::
+ptr_name has the address of var_of_d_type
+*ptr_name has the value stored in var_of_d_type

@@ -1,0 +1,28 @@
+* Structure is a user defined data type which can hold different types of data members.
+* It is used to group different types of data together.
+
+Structure is used 
+
+Different ways of structure syntax:
+
+////////////////////////////////////////////
+Declaration and definition:
+struct struct_name
+{
+	//members declaration same as variable declaration
+}var_name = {values_of_members_seperated_by_comma_in_the_same_order_as_declaration};
+
+////////////////////////////////////////////
+struct struct_name
+{
+	//members declaration same as variable declaration
+};
+
+struct struct_name var_name;
+
+/////////////////////////////////////////////
+
+Accessing:
+var_name.member_name
+
+/////////////////////////////////////////////

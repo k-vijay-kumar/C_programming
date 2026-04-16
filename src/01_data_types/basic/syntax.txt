@@ -1,0 +1,33 @@
+Derclaration:
+data_type var_name;
+
+Definition:
+var_name = value;
+
+or
+
+Declaration and definition:
+data_type var_name = value;
+
+
+Note::
+If any exception, it is specified in the respective documents
+(string definition can only be done along with declaration, if value is hard coded in the program)
+
+
+//////////////////////////////
+
+Void data type is an incomplete data type which cannot be instantiated. 
+It is used to indicate that a function does not return any value or does not take any parameters. 
+It is also used to declare pointers to void, which can point to any data type.
+
+
+Int data type is used to store whole numbers (both positive and negative) without any decimal point.
+
+Float data type is used to store decimal numbers (both positive and negative) with single precision (4 bytes).
+
+Double data type is used to store decimal numbers (both positive and negative) with double precision (8 bytes).
+
+Char data type is used to store a single character (alphabet or special character) and it takes 1 byte of memory.
+
+////////////////////////////

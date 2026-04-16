@@ -1,0 +1,26 @@
+ * Union is used to store different types of data in the same memory location. 
+ * It is used when we want to store different types of data but only one type of data at a time.
+
+Different ways of union syntax:
+
+////////////////////////////////////////////
+Declaration and definition:
+union union_name
+{
+	//members declaration same as variable declaration
+}var_name = {values_of_members_seperated_by_comma_in_the_same_order_as_declaration};
+
+////////////////////////////////////////////
+union union_name
+{
+	//members declaration same as variable declaration
+};
+
+union union_name var_name;
+
+/////////////////////////////////////////////
+
+Accessing:
+var_name.member_name
+
+/////////////////////////////////////////////

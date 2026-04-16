@@ -1,0 +1,3 @@
+Size of union my_d_type data type is 4 bytes
+   text	   data	    bss	    dec	    hex	filename
+  14408	   1552	    112	  16072	   3ec8	output/output.exe
