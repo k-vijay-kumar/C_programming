@@ -12,8 +12,8 @@ C_programming/			<br/>
 │   ├── output			<br/>
 │   └── run.sh			<br/>
 └── src				<br/>
-    ├── 00_hello_world.c	<br/>
-    ├── 0_info			<br/>
+    ├── 000_hello_world.c	<br/>
+    ├── 00_C_Basics			<br/>
     ├── 1_data_types		<br/>
     ├── 2_constants		<br/>
     ├── 3_alias			<br/>
@@ -36,11 +36,11 @@ C_programming/						<br/>
 │   └── run.sh						<br/>
 └── src							<br/>
     ├── 000_hello_world.c				<br/>
-    ├── 00_info						<br/>
+    ├── 00_C_Basics                     <br/>
     │   ├── compilation_flow.txt			<br/>
     │   ├── memory_mapping.txt					<br/>
     │   └── storage_classes.txt				<br/>
-    ├── 1_data_types					<br/>
+    ├── 01_data_types			<br/>
     │   ├── basic					<br/>
     │   │   ├── char					<br/>
     │   │   │   ├── char_representation.c		<br/>
