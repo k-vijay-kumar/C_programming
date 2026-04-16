@@ -35,11 +35,11 @@ C_programming/						<br/>
 │   ├── output						<br/>
 │   └── run.sh						<br/>
 └── src							<br/>
-    ├── 00_hello_world.c				<br/>
-    ├── 0_info						<br/>
+    ├── 000_hello_world.c				<br/>
+    ├── 00_info						<br/>
     │   ├── compilation_flow.txt			<br/>
-    │   ├── mem_map.txt					<br/>
-    │   └── storage_cls.txt				<br/>
+    │   ├── memory_mapping.txt					<br/>
+    │   └── storage_classes.txt				<br/>
     ├── 1_data_types					<br/>
     │   ├── basic					<br/>
     │   │   ├── char					<br/>
@@ -155,13 +155,20 @@ C_programming/						<br/>
 	- `git clone git@<your_hostname>:k-vijay-kumar/C_programming.git`		
 		
 ### Running a program:
+
+## 1. Using Makefile
 - `cd C_programming/sim/`
-- `make all filename=<filename_without_.c>`     	<br/>
+- `make all f=<filename_without_.c>`     	<br/>
 	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
 
 - In order to perform a seperate process:
-	- `make <process_name> filename=<filename_without_.c>`		<br/>
+	- `make <process_name> f=<filename_without_.c>`		<br/>
 	All the output files generated will be in the folder C_programming/sim/output/		<br/>
 	The log of the process performed will be in the folder C_programming/sim/
+
+## 2. Using Shell Script
+- `cd C_programming/sim/`
+- `./run.sh -f <filename_without_.c>`     	<br/>
+	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
 
 ---

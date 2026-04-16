@@ -12,15 +12,15 @@ int main()
 	char character;
 	character = 'V';
 
-	char string[3] =  "VVK";
+	char string[6] =  "Vijay";
 
 	printf("character V (char): %c\n", character);
-	printf("string VVK (char[3]): %s\n", string);
+	printf("string Vijay (char[6]): %s\n", string);
 }
 
 /*
 Output:
 character V (char): V
-string VVK (char[3]): VVK
+string Vijay (char[6]): Vijay
 */
 

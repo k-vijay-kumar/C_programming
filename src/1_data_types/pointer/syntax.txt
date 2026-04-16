@@ -1,12 +1,11 @@
-pointer declaration syntax-	
-d_type* ptr_name;
+pointer declaration syntax -
+data_type* ptr_name;
 
-pointer definition syntax-	
+pointer definition syntax -
 ptr_name = &var_of_d_type;
 
-dereferencing pointer- 	
+dereferencing pointer - 	
 *ptr_name
-
 
 Note::
 ptr_name has the address of var_of_d_type

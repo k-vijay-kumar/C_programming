@@ -1,4 +1,4 @@
-mem map from high address to low address 
+mem map from high address to low address is shown below:
 mem map explains the position in memory where different parts of our code stays
 
 cmd line arg - cargv, carg
@@ -12,8 +12,8 @@ text - code segment
 
 mem allocation:
 
-static memory allocation	- allocation of memory at compile time 
-dynamic memory allocation	- allocation of memory at run time
+static memory allocation (sma)	- allocation of memory at compile time 
+dynamic memory allocation (dma)	- allocation of memory at run time
 
-dma is alloacated in heap 
+dma is alloacated in heap
 all dma allocated must be freed

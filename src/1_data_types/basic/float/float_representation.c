@@ -14,12 +14,12 @@ int main()
 				  // value stored (as per Implicit normalisation and floating point representation). 
 				  // This value (2) stored in memory is dereferenced into c. c = 0.000000
 
-	printf("%f\n", b);
-	printf("%f\n", c);
+	printf("b = %f\n", b);
+	printf("c = %f\n", c);
 }
 
 /*
 Output
-2.000000
-0.000000
+b = 2.000000
+c = 0.000000
 */

@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("The size of void data_type is %ld bytes\n", sizeof(void));
+	printf("The size of void data_type is %u bytes\n", sizeof(void));
 }
 
 /*

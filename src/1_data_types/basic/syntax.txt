@@ -11,5 +11,5 @@ data_type var_name = value;
 
 
 Note::
-If any exception, it is specified in the respective documents 
+If any exception, it is specified in the respective documents
 (string definition can only be done along with declaration, if value is hard coded in the program)

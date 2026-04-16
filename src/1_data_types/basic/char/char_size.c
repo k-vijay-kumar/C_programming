@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("Size of char type is %ld bytes\n", sizeof(char));
+	printf("Size of char type is %u bytes\n", sizeof(char));
 }
 
 /*

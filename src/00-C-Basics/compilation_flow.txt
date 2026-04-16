@@ -1,11 +1,11 @@
 Source file -
-initially a c prog file will be saved as test.c
+initially a c prog source code will be saved in a .c extended file
 
 Preprocessing -
-This file before compilation, when compiled will add the preprocessing data's in the source file.
-After the addition, it will create a intermediate/extended source code. (test.i)
+The .c file when compiled, before compilation, will add the preprocessing data's in the source file.
+After the addition, it will create an intermediate/extended source code in the .i extended file.
 In this intermediate source code, all the #include header files will be substituted with its functions and 
-the #define variable values will be substituted insted of the variable
+the #define variable values will be substituted instead of the variable. 
 
 Compilation -
 Then compilation takes place, where it checks for syntax errors.

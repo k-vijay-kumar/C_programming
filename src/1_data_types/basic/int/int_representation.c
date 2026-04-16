@@ -20,7 +20,7 @@ int main()
 
 	//unsigned integer types
 	uint8_t uint8_value = -1;
-	printf("Value of -1 (uint8_t): %d\n", uint8_value);	
+	printf("Value of -1 (uint8_t): %u\n", uint8_value);	
 }
 
 /*

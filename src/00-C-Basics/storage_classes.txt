@@ -6,10 +6,10 @@ A Vaiable's
 
 All these are mentioned by the storage classes
 They are
-1.Auto		- default
-2.Register
-3.Extern
-4.Static
+1.auto		- default
+2.register
+3.extern
+4.static
 
 These are used before the datatypes.
 Syntax:
@@ -28,11 +28,11 @@ Scope 		- function/Block scope is allowed
 Location 	- stack(RAM)
 Lifetime 	- within the block
 
-For auto storage class, the instructions are stored in stack, from there moved to RAM, there to CPU registers.
+For auto storage class, the instructions are stored in stack. When accessed the data in stack is moved to RAM, there to CPU registers.
 Switching of instruction from RAM to CPU reg takes time.
 
 //////////////////////
-Register:
+Register: same as auto except the location 
 Default Value 	- garbage
 Scope 		- function/Block scope is allowed
 Location 	- CPU Register
@@ -46,19 +46,20 @@ we cant use pointer to store address of a register variable, as CPU reg doesnt h
 ///////////////////////////
 Static:
 Default Value 	- zero
-Scope 		- function/Block/Program scope is allowed
+Scope 		- function/Block/File scope is allowed. 
 Location 	- RAM
 Lifetime 	- till the end of the program
 
-Once a variable is initialised as static, if once again it is initialised it wont be 0, the variable would have the older value.
-Repetitive initializations of the same variable as static will not be executed.
+Once a variable is declared as static, if once again it is declared it wont be 0, the variable would have the older value.
+Repetitive declaration of the same variable as static will not be executed.
+It holds the value across function calls
 
 ///////////////////////////
 Extern:         
 	- all global variables are Extern
 
 Default Value 	- zero
-Scope 		- Global scope 
+Scope 		- Global scope
 Location 	- RAM
 Lifetime 	- till the end of the program
 
