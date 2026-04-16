@@ -40,7 +40,7 @@ gcc -S `find ../src/ -name ${filename}.c` -o output/${filename}.asm
 
 gcc -c `find ../src/ -name ${filename}.c` -o output/${filename}.obj 
 
-gcc output/*.obj -o output/output.exe 
+gcc output/${filename}.obj -o output/output.exe 
 
 ./output/output.exe | tee -a ${filename}.log
 
