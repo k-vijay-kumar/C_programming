@@ -2,7 +2,7 @@
 
 clean()
 {
-	rm output/*.i output/*.asm output/*.obj output/*.exe *.log
+	rm -f output/*.i output/*.asm output/*.obj output/*.exe *.log *.txt
 }
 
 
@@ -15,7 +15,7 @@ invalid()
 filename="hello_world"
 
 
-while getopts "f:cr" option
+while getopts "f:c" option
 do
 	case ${option} in
 		f)
