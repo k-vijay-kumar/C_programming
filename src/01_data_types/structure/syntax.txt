@@ -1,7 +1,7 @@
 * Structure is a user defined data type which can hold different types of data members.
 * It is used to group different types of data together.
 
-Structure is used 
+
 
 Different ways of structure syntax:
 

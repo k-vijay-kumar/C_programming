@@ -1,0 +1,7 @@
+//Synatx:
+
+typedef data_type alias_name;
+
+/*
+It is used to provide an alternate name for a data_type
+*/

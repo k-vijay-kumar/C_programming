@@ -1,0 +1,40 @@
+//Syntax:
+
+#define macro_name definition
+
+/*
+ * Macro in c is defined by the #define directive. 
+ * Macro is a name given to a piece of code, so whenever the compiler encounters a macro in a program, it will replace it with the macro value
+ * Macro can be a var, string or function
+ *
+ * Syntax:
+	#define <macro>
+	
+ * predefined macros :
+ * 	   	              __DATE__		//month date year
+ *                    __time__		//hr:min:sec
+ *                    __FILE__		//path of .c file from pwd	
+ *                    __LINE__		//line number of the __LINE__ command in .c file
+ *                    __STDC__		//value 1 means that the compiler conforms to ISO/ANSI Standard C. 
+ *
+
+#ifdef <macro>   
+	//statements
+#endif
+
+- executes the statements if the <macro> is defined
+
+
+#ifndef <macros>
+	//sattements
+#endif
+
+- executes statements if the <macro> is not defined
+
+
+
+#undef <macro>
+
+- undefines a defined macro
+
+*/

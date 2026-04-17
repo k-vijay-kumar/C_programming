@@ -1,6 +1,0 @@
-Size of struct my_d_type data type is 12 bytes
-   text	   data	    bss	    dec	    hex	filename
-  14412	   1552	    112	  16076	   3ecc	output/output.exe
-Size of struct my_d_type data type is 12 bytes
-   text	   data	    bss	    dec	    hex	filename
-  14408	   1552	    112	  16072	   3ec8	output/output.exe

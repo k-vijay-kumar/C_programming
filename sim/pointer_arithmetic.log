@@ -1,6 +1,0 @@
-Value of ptr1: 0061FF0C
-Value of ptr1 +1: 0061FF10
-Value of ptr1 - 1: 0061FF08
-Difference of ptr1 and ptr1+1: 1
-   text	   data	    bss	    dec	    hex	filename
-  14572	   1552	    112	  16236	   3f6c	output/output.exe

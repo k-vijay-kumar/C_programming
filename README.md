@@ -14,12 +14,12 @@ C_programming/			<br/>
 └── src				<br/>
     ├── 000_hello_world.c	<br/>
     ├── 00_C_Basics			<br/>
-    ├── 1_data_types		<br/>
-    ├── 2_constants		<br/>
-    ├── 3_alias			<br/>
-    ├── 4_function		<br/>
-    ├── 5_file			<br/>
-    └── 6_dma			<br/>
+    ├── 01_data_types		<br/>
+    ├── 02_constants		<br/>
+    ├── 03_typedef			<br/>
+    ├── 04_function		<br/>
+    ├── 05_file			<br/>
+    └── 06_dma			<br/>
 
 10 directories, 4 files		<br/>
 
@@ -75,7 +75,7 @@ C_programming/						<br/>
     │       ├── union_access.c				<br/>
     │       ├── union_pointer_access.c			<br/>
     │       └── union_size.c				<br/>
-    ├── 2_constants					<br/>
+    ├── 02_constants					<br/>
     │   ├── const					<br/>
     │   │   ├── const.c					<br/>
     │   │   └── syntax.txt				<br/>
@@ -85,15 +85,15 @@ C_programming/						<br/>
     │   └── macros					<br/>
     │       ├── macros.c				<br/>
     │       └── syntax.txt				<br/>
-    ├── 3_alias						<br/>
+    ├── 03_alias						<br/>
     │   ├── syntax.txt					<br/>
     │   └── typedef.c					<br/>
-    ├── 4_function					<br/>
+    ├── 04_function					<br/>
     │   ├── function.c					<br/>
     │   ├── function_callback.c				<br/>
     │   ├── function_ptr.c				<br/>
     │   └── syntax.txt					<br/>
-    ├── 5_file						<br/>
+    ├── 05_file						<br/>
     │   ├── append.c					<br/>
     │   ├── append_plus.c				<br/>
     │   ├── fseek.c					<br/>
@@ -103,7 +103,7 @@ C_programming/						<br/>
     │   ├── syntax.txt					<br/>
     │   ├── write.c					<br/>
     │   └── write_plus.c				<br/>
-    └── 6_dma						<br/>
+    └── 06_dma						<br/>
         ├── calloc.c					<br/>
         ├── malloc.c					<br/>
         ├── realloc.c					<br/>
@@ -115,44 +115,9 @@ C_programming/						<br/>
 
 ## Steps to run a program:
 
-### Checkout:
+### Checkout (CLone the repository):
 
-- Creating key-pair:
-	- `ssh-keygen -t ed25519 -C "your_email@example.com"`  				<br/>
-	
- 	Use the noreply email of your github account for efficiency  			<br/>
-	When asked for the filename to save the key, enter `~/.ssh/<filename>`		<br/>
-	Dont use any passphrase. Just press enter. Keys will be generated.		<br/>
-
-- Adding config file for efficient use of multiple github accounts:			<br/>
-	- Creating config file
-   
-	```
- 	cd ~/.ssh/				
-	mkdir config				
-	cd config					
-	gvim config
- 	```									
- 
- 	- Enter the below text in config file:			
-
-	```
- 	Host <your_hostname> github.com			
-		Hostname github.com
-		AddKeysToAgent yes				
-		PreferredAuthentications publickey		
-		IdentityFile ~/.ssh/<filename>
- 	```		
-- Adding the ssh public key in Github
-```
-	Open your gitub account			
- 	Settings -> SSH and GPG Keys -> New SSH Key		
-  	Add the key				
-   	Click on Add SSH Key
-  ```
-- cloning the repo:
-	cd to the directory where you want to clone the repo
-	- `git clone git@<your_hostname>:k-vijay-kumar/C_programming.git`		
+    Refer https://github.com/k-vijay-kumar/GitHub to clone the C_programming repository to your local machine
 		
 ### Running a program:
 

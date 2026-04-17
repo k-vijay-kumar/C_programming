@@ -1,0 +1,23 @@
+//Syntax:
+
+enum enum_name
+{
+	//member1 = value,   //value if needed or else by default value starts from 0
+	//member2,
+	.
+	.
+	//membern
+};
+
+//Usual way of using enum values
+enum enum_name var_name = member1;
+
+/*
+ * It is mainly used to assign names to integral constants
+ * macros(#define) only have global scope. but enum can have global/local scope
+ * By default enum assigns its variables with values starting from 0 in ascending order
+ * This can be overwritten by user as per is needs
+ * If a variable is assigned a value n, then its succeeding variables takes its next values in ascending order
+ * Even that order can be altered by intervening and providing the values wherever required
+ *
+ */

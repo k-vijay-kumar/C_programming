@@ -1,0 +1,9 @@
+//Syntax:
+
+const data_type var_name = value;
+
+
+/*
+Constant is used to define a variable whose value cannot be changed. It is a read-only variable.
+The const qualifier can be used with any data type to make it constant.
+*/
