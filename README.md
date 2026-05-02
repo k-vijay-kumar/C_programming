@@ -128,12 +128,14 @@ C_programming/						<br/>
 
 - In order to perform a seperate process:
 	- `make <process_name> f=<filename_without_.c>`		<br/>
+    where, process_name includes all, preprocess, compile, assemble, link, execute, mem_map and clean
 	All the output files generated will be in the folder C_programming/sim/output/		<br/>
 	The log of the process performed will be in the folder C_programming/sim/
 
 ## 2. Using Shell Script
 - `cd C_programming/sim/`
 - `./run.sh -f <filename_without_.c>`     	<br/>
+    use -c to clean the generated files
 	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
 
 ---
