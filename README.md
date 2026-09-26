@@ -8,7 +8,6 @@ This navigates users to find out the directory locations...		<br/>
 C_programming/			<br/>
 ├── README.md   		<br/>
 ├── sim				<br/>
-│   ├── makefile		<br/>
 │   ├── output			<br/>
 │   └── run.sh			<br/>
 └── src				<br/>
@@ -21,8 +20,6 @@ C_programming/			<br/>
     ├── 05_file			<br/>
     └── 06_dma			<br/>
 
-10 directories, 4 files		<br/>
-
 ---
 
 ## File Structure:
@@ -31,7 +28,6 @@ This navigates users to find out the directory and file locations...		<br/>
 C_programming/						<br/>
 ├── README.md						<br/>
 ├── sim							<br/>
-│   ├── makefile					<br/>
 │   ├── output						<br/>
 │   └── run.sh						<br/>
 └── src							<br/>
@@ -47,7 +43,7 @@ C_programming/						<br/>
     │   │   │   └── char_size.c				<br/>
     │   │   ├── double					<br/>
     │   │   │   ├── double_need.c			<br/>
-    │   │   │   ├── double_representation1.c		<br/>
+    │   │   │   ├── double_representation.c		<br/>
     │   │   │   └── double_size.c			<br/>
     │   │   ├── float					<br/>
     │   │   │   ├── float_representation.c		<br/>
@@ -85,7 +81,7 @@ C_programming/						<br/>
     │   └── macros					<br/>
     │       ├── macros.c				<br/>
     │       └── syntax.txt				<br/>
-    ├── 03_alias						<br/>
+    ├── 03_typedef						<br/>
     │   ├── syntax.txt					<br/>
     │   └── typedef.c					<br/>
     ├── 04_function					<br/>
@@ -109,8 +105,6 @@ C_programming/						<br/>
         ├── realloc.c					<br/>
         └── syntax.txt					<br/>
 
-22 directories, 57 files				<br/>
-
 ---
 
 ## Steps to run a program:
@@ -121,21 +115,11 @@ C_programming/						<br/>
 		
 ### Running a program:
 
-## 1. Using Makefile
+## Running with the Shell Script
 - `cd C_programming/sim/`
-- `make all f=<filename_without_.c>`     	<br/>
-	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
+- `./run.sh [-f <filename_without_.c>]` (default: `000_hello_world`)
+- `./run.sh -c` to clean generated build files.
 
-- In order to perform a seperate process:
-	- `make <process_name> f=<filename_without_.c>`		<br/>
-    where, process_name includes all, preprocess, compile, assemble, link, execute, mem_map and clean
-	All the output files generated will be in the folder C_programming/sim/output/		<br/>
-	The log of the process performed will be in the folder C_programming/sim/
-
-## 2. Using Shell Script
-- `cd C_programming/sim/`
-- `./run.sh -f <filename_without_.c>`     	<br/>
-    use -c to clean the generated files
-	The above command completes all processses(process_name): preprocess, compile, assemble, link, execute and mem_map
+The script preprocesses, compiles, assembles, links, and runs the selected program. Intermediate files and the executable are written to `sim/output/`; the log is written to `sim/<filename>.log`. The final `size` command reports executable section sizes, not a process memory map.
 
 ---

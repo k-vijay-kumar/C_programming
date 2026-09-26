@@ -1,24 +1,15 @@
-The floating point values are stored in memory using Implicit Representation method
+# IEEE 754 Binary32 (Common `float` Format)
 
-The float uses 32 bit Single precision representation
+C does not require every implementation's `float` to use IEEE 754 binary32. On systems that do, a finite normalized value is represented as:
 
-Any floating point number need to represented as 
-(-1)^Sign x 1.Mantessa x 2^Exponent
+```text
+(-1)^sign x 1.fraction x 2^(exponent_field - 127)
+```
 
-This value will be stored in the 32 bit as,
-{Sign, Exponent, Mantessa},
+The 32 bits are divided into a 1-bit sign, 8-bit exponent field, and 23-bit fraction field. The exponent bias is `2^(8 - 1) - 1 = 127`.
 
-Where, Sign (1bit)
-       Exponent (8 bits) - This will be stored in the biased format
-       Mantessa (23bits)
+- Exponent fields `1` through `254` encode normalized exponents `-126` through `127`.
+- Exponent field `0` encodes zero or subnormal values; subnormals do not have the implicit leading `1`.
+- Exponent field `255` encodes infinity or NaN.
 
-Biased Format of Exponent,
-Bias = 2^n - 1, n=no. of bits for Exponent
-     = 127
-
-The Exponent Range is 0 to 256
-Subtracting the bias, we get -127 to 128
-
-So, The exponent value of -127 to 128 can be stored as 0 to 256
-
-To get the biased value of the Exponent, add 127 to the exponent.
+Thus, `-127` through `128` is not the normalized exponent range. Check the target implementation before assuming this representation or its layout.

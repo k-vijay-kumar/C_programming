@@ -12,7 +12,7 @@ invalid()
 }
 
 
-filename="hello_world"
+filename="000_hello_world"
 
 
 while getopts "f:c" option
@@ -33,6 +33,15 @@ done
 #Run commands
 
 echo "${filename}"
+
+if [ -d output ]; then
+	:
+elif [ -e output ]; then
+	echo "output exists but is not a directory" >&2
+	exit 1
+else
+	mkdir -p output || exit 1
+fi
 
 gcc -E `find ../src/ -name ${filename}.c` -o output/${filename}.i 
 

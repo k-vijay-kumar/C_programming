@@ -10,7 +10,7 @@ calloc - contiguous allocation
 
  use calloc only if u need to have a default value of 0
 
-To get more info on pointer, refer: C_programming/src/1_data_types/pointer
+To get more info on pointers, refer to C_programming/src/01_data_types/pointer
 
 */
 

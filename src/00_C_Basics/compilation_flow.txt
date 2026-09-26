@@ -1,46 +1,27 @@
-Source file -
-initially a c prog source code will be saved in a .c extended file
+# C Compilation Flow
 
-Preprocessing -
-The .c file when compiled, before compilation, will add the preprocessing data's in the source file.
-After the addition, it will create an intermediate/extended source code in the .i extended file.
-In this intermediate source code, all the #include header files will be substituted with its functions and 
-the #define variable values will be substituted instead of the variable. 
+A typical GCC build passes source through preprocessing, compilation to assembly, assembly to an object file, and linking to an executable. GCC can run several stages in one command; the commands below show each stage explicitly.
 
-Compilation -
-Then compilation takes place, where it checks for syntax errors.
-If no error present, then assembly level code will be generated.(test.asm)
+Run these commands from the directory containing `test.c`:
 
-Assembler -
-Then assembler converts asm file to object file. (test.obj)
+```sh
+# Preprocess C and expand included headers and macros.
+gcc -E test.c -o test.i
 
-Linker -
-Linker links all the object files with system libraries then links all object files together. Now executable file is generated.(test.exe)
+# Compile C to assembly.
+gcc -S test.c -o test.s
 
-loader -
-Loader will load the exe file to the main memory(RAM)
-Runtime error will be shown here.
+# Assemble to an object file.
+gcc -c test.s -o test.o
 
-Commands used for tese process:
-Preprocessing:
-	gcc -E test.c -o test.i
+# Link the object file into an executable.
+gcc test.o -o test.exe
 
-Compilation:
-	gcc -s test.c -o test.asm
+# Run the program.
+./test.exe
 
-Assembling:
-	gcc -c test.c -o test.obj
+# Display executable section sizes (not a process memory map).
+size test.exe
+```
 
-Linking:
-	gcc *.obj -o test.exe
-
-Run:
-	./test.exe
-
-To get mem map information:
-	size test.exe
-
-
-NOTE:
-	test is a optional name used here. You can use your filename
-
+Replace `test` with the chosen source-file name. A program may use multiple object files and libraries at the link stage.

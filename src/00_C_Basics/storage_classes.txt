@@ -1,71 +1,24 @@
-A Vaiable's
-1. Default value  	- Initial value of a variable
-2. Memory location  	- Where the variable is stored
-3. Scope  		- scope of a variable is the region of code where it can be accessed
-4. lifetime		- lifetime is the time it exists and holds its value
+# Storage Classes and Linkage
 
-All these are mentioned by the storage classes
-They are
-1.auto		- default
-2.register
-3.extern
-4.static
+Storage-class specifiers affect properties such as storage duration and linkage. They do not, by themselves, determine a variable's physical memory location.
 
-These are used before the datatypes.
-Syntax:
-	storage_cls data_type var_name;
+## `auto`
 
-Types of Scope - 
-Block
-Function/Method
-program
+`auto` is the default storage-class specifier for block-scope objects. Such objects normally have automatic storage duration: their lifetime is limited to execution of the block. An uninitialized automatic object has an indeterminate value; reading it can cause undefined behavior.
 
+## `register`
 
-///////////////////////////
-Auto:
-Default Value 	- garbage
-Scope 		- function/Block scope is allowed
-Location 	- stack(RAM)
-Lifetime 	- within the block
+`register` requests that an automatic object be accessed quickly, but the compiler may ignore the request. It does not guarantee storage in a CPU register. The address-of operator cannot be applied to an object declared `register`.
 
-For auto storage class, the instructions are stored in stack. When accessed the data in stack is moved to RAM, there to CPU registers.
-Switching of instruction from RAM to CPU reg takes time.
+## `static`
 
-//////////////////////
-Register: same as auto except the location 
-Default Value 	- garbage
-Scope 		- function/Block scope is allowed
-Location 	- CPU Register
-Lifetime 	- within the block
+Objects with static storage duration exist for the entire program execution and are zero-initialized if no initializer is provided.
 
-For register, by storing variables in RAM, time is efficient. But all variables cant be stored in cpu reg as its memory is less. 
-Only store frequently used variables in register.
-If compiler cant store a variable in CPU reg, then it will be stored in stack(auto).
-we cant use pointer to store address of a register variable, as CPU reg doesnt have an address.
+- A block-scope `static` object retains its value between function calls; its name remains visible only within its block.
+- A file-scope `static` object has internal linkage, so it can be referred to only within that source file.
 
-///////////////////////////
-Static:
-Default Value 	- zero
-Scope 		- function/Block/File scope is allowed. 
-Location 	- RAM
-Lifetime 	- till the end of the program
+## `extern`
 
-Once a variable is declared as static, if once again it is declared it wont be 0, the variable would have the older value.
-Repetitive declaration of the same variable as static will not be executed.
-It holds the value across function calls
+`extern` declares an object or function with linkage, commonly to refer to a definition in another source file. A declaration such as `extern int count;` usually does not define the object; a definition must exist in the program. File-scope objects have external linkage by default unless declared `static`, but not every global declaration is itself an `extern` declaration.
 
-///////////////////////////
-Extern:         
-	- all global variables are Extern
-
-Default Value 	- zero
-Scope 		- Global scope
-Location 	- RAM
-Lifetime 	- till the end of the program
-
-Extern is used if a variable is defined in another file, and we want to use that variable in the current file in the same project.
-No memory will be allocated in the file where extern is used.
-
-Extern is also used in the same file, if variable is declared at the end of the program and we want to use at the beginning of the program.
-
-///////////////////////////////
+Scope (where a name is visible), linkage (whether declarations refer to the same entity), storage duration (how long an object exists), and initialization are related but distinct C concepts.
